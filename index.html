@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="icon" type="image/svg+xml" href="" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,31 +11,44 @@
     </head>
     <body>
         <main>
-            <header>
+            <a href="#" class="btn-wsp" data-aos="fade-up">
+                <i class="bi bi-whatsapp"></i>
+            </a>
+
+            <header class="top-header">
                 <div class="container">
                     <div class="row">
-                        <div class="col-3 d-flex align-items-center logo">
-                            <a href="#" class="logo">
-                                <img src="/src/assets/logo-sofcar.svg" alt="SOFCAR">
+                        <div class="col-8 col-lg-3 d-flex align-items-center col-logo">
+                            <a href="#top" class="logo">
+                                <span class="svg-logo"></span>
                             </a>
                         </div>
-                        <div class="col">
+                        <div class="col-4 col-lg-9 d-flex align-items-center justify-content-end">
                             <nav>
-                                <ul>
-                                    <li><a href="#">Servicios</a></li>
-                                    <li><a href="#">Planes</a></li>
-                                    <li><a href="#">Para tu negocios</a></li>
-                                    <li><a href="#">Contacto</a></li>
-                                    <li><a class="btn-primary" href="#">Empieza gratis</a></li>
-                                    <li><a class="btn-secondary" href="#">Ingresar</a></li>
+                                <ul class="nav-menu">
+                                    <li class="nav-item"><a href="#servicios">Servicios</a></li>
+                                    <li class="nav-item"><a href="#negocio">Para tu negocio</a></li>
+                                    <li class="nav-item"><a href="#planes">Planes</a></li>
+                                    <li class="nav-item"><a href="#contacto">Contacto</a></li>
+                                    <li class="nav-item-btn">
+                                        <a class="btn-primary" href="#">Empieza gratis</a>
+                                    </li>
+                                    <li class="nav-item-btn">
+                                        <a class="btn-secondary" href="#">Ingresar</a>
+                                    </li>
                                 </ul>
                             </nav>
+                            <div class="icon-hamburger" id="hamburger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </header>
 
-            <section class="hero" style="background-image: url('/src/assets/bg-logo.svg');">
+            <section id="top" class="hero" style="background-image: url('/src/assets/bg-logo.svg');">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col">
@@ -48,18 +61,640 @@
                             </ul>
                         </div>
                         <div class="col">
-                            <img class="img-hero" src="/src/assets/img-hero.webp" alt="Sofcar en una caja registradora">
                         </div>
                     </div>
                 </div>
-                <img data-aos="fade-in" data-aos-duration="3000" class="bg-hero-light" src="/src/assets/bg-hero-light.svg" alt="Background light">
+                 <span data-aos="fade-in" data-aos-duration="3000" class="bg-hero-light svg-bg-hero-light"></span>
             </section>
 
-            <section class="services"></section>
+            <section id="servicios" class="services">
+                <span class="logo-float float1" data-parallax="0.3"></span>
+                <div class="container">
+                    <header class="titles titles-center titles-dark"> 
+                        <div class="titles-txt">
+                            <h2>Servicios</h2>
+                            <span class="titles-line"></span>
+                            <h3>Deja de preocuparte por el SII. <br><span>Enfócate en vender</span></h3>
+                            <p>Resolvemos los tres grandes dolores del comerciante moderno.</p>
+                        </div>
+                    </header>
+                    <div class="row row-service">
+                        <div class="col-12 col-lg-4 p-md-4">
+                            <article>
+                                <span class="box-icon icon-check-list"></span>
+                                <h3>Cumplimiento SII garantizado</h3>
+                                <p>Emite boletas y facturas electrónicas 100% válidas ante el SII. Certificados, sin rechazos, sin multas.</p>
+                            </article>
+                        </div>
+                        <div class="col-12 col-lg-4 p-md-4">
+                            <article>
+                                <span class="box-icon icon-chart"></span>
+                                <h3>Control total de tu negocio</h3>
+                                <p>Stock, compras, ventas e informes en tiempo real. Toma decisiones con datos, no con suposiciones.</p>
+                            </article>
+                        </div>
+                        <div class="col-12 col-lg-4 p-md-4">
+                            <article>
+                                <span class="box-icon icon-privacy"></span>
+                                <h3>Soporte real cuando lo necesitas</h3>
+                                <p>Personas reales que responden rápido. No bots, no tickets perdidos. Estamos cuando más nos necesitas.</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-            <div class="btn-wsp">
+            <section id="plataforma" class="platform">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <header class="titles titles-left titles-light"> 
+                                <div class="titles-txt">
+                                    <h2>La plataforma</h2>
+                                    <h3><span>Un sistema completo.</span> <br>Una sola pantalla.</h3>
+                                    <p>Desde emitir una boleta hasta revisar tus ventas del mes. <br>Todo desde tu computador o celular, sin instalar nada.</p>
+                                </div>
+                            </header>
+                            <ul class="platform-list">
+                                <li>
+                                    <span class="box-icon icon-check"></span>
+                                    <p>Punto de venta táctil con boleta electrónica instantánea</p>
+                                </li>
+                                <li>
+                                    <span class="box-icon icon-check"></span>
+                                    <p>Facturación electrónica ilimitada</p>
+                                </li>
+                                <li>
+                                    <span class="box-icon icon-check"></span>
+                                    <p>Control de stock y alertas de reposición</p>
+                                </li>
+                                <li>
+                                    <span class="box-icon icon-check"></span>
+                                    <p>Informes de ventas diarios, semanales y mensuales</p>
+                                </li>
+                                <li>
+                                    <span class="box-icon icon-check"></span>
+                                    <p>Multi-sucursal con movimiento de stock entre tiendas</p>
+                                </li>
+                                <li>
+                                    <span class="box-icon icon-check"></span>
+                                    <p>Acceso desde cualquier dispositivo con internet</p>
+                                </li>
+                                <li>
+                                    <span class="box-icon icon-check"></span>
+                                    <p>App móvil para venta sin local físico</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-lg-6"></div>
+                    </div>
+                </div>
+                <span data-aos="fade-in" data-aos-duration="3000" class="bg-hero-light svg-bg-hero-light"></span>
+            </section>
 
-            </div>
+            <section id="negocio" class="business">
+                <span class="logo-float float2" data-parallax="0.5"></span>
+                <div class="container">
+                    <header class="titles titles-center titles-dark"> 
+                        <div class="titles-txt">
+                            <h2>Para tu negocio</h2>
+                            <span class="titles-line"></span>
+                            <h3>Hecho para el <br><span>comerciante Chileno.</span></h3>
+                            <p>Sin importar tu rubro, Sofcar se adapta a cómo trabajas tú.</p>
+                        </div>
+                    </header>
+                    <div class="row row-business">
+                        <div class="col-12 col-md-6">
+                            <article>
+                                <header>
+                                    <span class="box-icon icon-market"></span>
+                                    <h4>Minimarket / almacen</h4>
+                                </header>
+                                <h3>Venta rápida y stock al día</h3>
+                                <p>Control de stock, venta rápida y boleta en segundos. Ideal para negocios de alto flujo de clientes.</p>
+                            </article>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <article>
+                                <header>
+                                    <span class="box-icon icon-tools"></span>
+                                    <h4>Ferretería / Distribuidora</h4>
+                                </header>
+                                <h3>Miles de productos bajo control</h3>
+                                <p>Miles de productos, precios por lista y facturación a empresas. Todo controlado desde una sola pantalla.</p>
+                            </article>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <article>
+                                <header>
+                                    <span class="box-icon icon-cake"></span>
+                                    <h4>Restaurant / Café</h4>
+                                </header>
+                                <h3>De la mesa al SII en un toque</h3>
+                                <p>Boleta electrónica en mesa o barra. Cierre de caja diario y reportes de venta por turno.</p>
+                            </article>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <article>
+                                <header>
+                                    <span class="box-icon icon-rocket"></span>
+                                    <h4>Emprendedor / Vendedor ambulante</h4>
+                                </header>
+                                <h3>Tu local, en el bolsillo</h3>
+                                <p>Sin local físico, sin problema. La app móvil te permite emitir boletas desde cualquier lugar de Chile.</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="infraestructura" class="infrastructure" style="background-image: url('/src/assets/bg-logo.svg');">
+                <div class="container">
+                    <header class="titles titles-center titles-light"> 
+                        <div class="titles-txt">
+                            <h2>Infraestructura</h2>
+                            <span class="titles-line"></span>
+                            <h3><span>Tecnología de empresa grande.</span> <br>Precio de empresa pequeña.</h3>
+                            <p>Corremos sobre la misma infraestructura que usan las empresas más grandes del mundo.</p>
+                        </div>
+                    </header>
+                    <div class="row row-infrastructure">
+                        <div class="col-12 col-lg-3">
+                            <article>
+                                <header>
+                                    <span class="box-icon icon-claude"></span>
+                                    <h3>Servidores de Google</h3>
+                                </header>
+                                <p>Servidores en la nube de Google. Alta disponibilidad y conectividad garantizada en todo Chile.</p>
+                            </article>
+                        </div>
+                        <div class="col-12 col-lg-3">
+                            <article>
+                                <header>
+                                    <span class="box-icon icon-check-globe"></span>
+                                    <h3>Uptime garantizado</h3>
+                                </header>
+                                <p>Disponibilidad garantizada. Tu sistema funciona cuando tus clientes están comprando.</p>
+                            </article>
+                        </div>
+                        <div class="col-12 col-lg-3">
+                            <article>
+                                <header>
+                                    <span class="box-icon icon-lock"></span>
+                                    <h3>Datos encriptados</h3>
+                                </header>
+                                <p>Toda la información viaja y se almacena con encriptación SSL de grado bancario.</p>
+                            </article>
+                        </div>
+                        <div class="col-12 col-lg-3">
+                            <article>
+                                <header>
+                                    <span class="box-icon icon-data"></span>
+                                    <h3>Respaldo automático</h3>
+                                </header>
+                                <p>Backups automáticos semanales. Tus datos siempre protegidos, sin que tengas que hacer nada.</p>
+                            </article>
+                        </div>
+                    </div>
+                    <footer>
+                        <h2>Tecnologias y certificaciones</h2>
+                        <ul class="list-certification">
+                            <li>
+                                <span class="box-icon icon-check"></span>
+                                <p>Google Cloud</p>
+                            </li>
+                            <li>
+                                <span class="box-icon icon-check"></span>
+                                <p>SSL Banking-grade</p>
+                            </li>
+                            <li>
+                                <span class="box-icon icon-check"></span>
+                                <p>SII Certificado</p>
+                            </li>
+                            <li>
+                                <span class="box-icon icon-check"></span>
+                                <p>Hosted in LATAM</p>
+                            </li>
+                        </ul>
+                    </footer>
+                </div>
+            </section>
+
+            <section id="planes" class="prices">
+                <span class="logo-float float3" data-parallax="0.4"></span>
+                <div class="container">
+                    <header class="titles titles-center titles-dark"> 
+                        <div class="titles-txt">
+                            <h2>Precios</h2>
+                            <span class="titles-line"></span>
+                            <h3><span>Elige el plan para <br>tu negocio.</h3>
+                            <p>Sin contratos. Sin letra chica. Cancela cuando quieras.</p>
+                        </div>
+                    </header>
+
+                    <div class="tabs-wrapper">
+                        <ul class="nav nav-tabs" id="myTabs" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="tab-one-btn" data-bs-toggle="tab"
+                                data-bs-target="#tab-one" type="button" role="tab" aria-controls="tab-one" aria-selected="true">Plan mensual</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="tab-two-btn" data-bs-toggle="tab" data-bs-target="#tab-two" type="button" role="tab" aria-controls="tab-two" aria-selected="false">Plan anual <span>Ahorra 15%</span></button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabsContent">
+                            <div class="tab-pane fade show active" id="tab-one" role="tabpanel" aria-labelledby="tab-one-btn">
+                                <div class="row align-items-center row-prices">
+                                    <div class="col-12 col-lg-4">
+                                        <article>
+                                            <header>
+                                                <h2>Plan Básico</h2>
+                                                <p>Para el emprendedor que parte.</p>
+                                            </header>
+                                            <div class="content-price">
+                                                <ul>
+                                                    <li>$24.990</li>
+                                                    <li>/mes</li>
+                                                </ul>
+                                                <p>Facturado mensualmente</p>
+                                                <a href="#" class="button-price">Comenzar gratis</a>
+                                            </div>
+                                            <footer>
+                                                <h3>¿Qué incluye?</h3>
+                                                <ul>
+                                                    <li>
+                                                        <span class="box-icon icon-check"></span>
+                                                        <p>Boleta electrónica SII ilimitada</p>
+                                                    </li>
+                                                    <li>
+                                                        <span class="box-icon icon-check"></span>
+                                                        <p>App móvil de venta</p>
+                                                    </li>
+                                                    <li>
+                                                        <span class="box-icon icon-check"></span>
+                                                        <p>Impresora portátil compatible</p>
+                                                    </li>
+                                                    <li>
+                                                        <span class="box-icon icon-check"></span>
+                                                        <p>Soporte remoto</p>
+                                                    </li>
+                                                </ul>
+                                            </footer>
+                                        </article>
+                                    </div>
+                                    <div class="col-12 col-lg-4">
+                                        <article class="price-active">
+                                            <span class="price-active-globe">Más popular</span>
+                                            <header>
+                                                <h2>Plan Intermedio</h2>
+                                                <p>Para el negocio que quiere crecer.</p>
+                                            </header>
+                                            <div class="content-price">
+                                                <ul>
+                                                    <li>$49.990</li>
+                                                    <li>/mes</li>
+                                                </ul>
+                                                <p>Facturado mensualmente</p>
+                                                <a href="#" class="button-price">Comenzar gratis</a>
+                                            </div>
+                                            <footer>
+                                                <h3>Incluye lo del plan básico, más:</h3>
+                                                <ul>
+                                                    <li>
+                                                        <span class="box-icon icon-check"></span>
+                                                        <p>Facturación electrónica SII ilimitada</p>
+                                                    </li>
+                                                    <li>
+                                                        <span class="box-icon icon-check"></span>
+                                                        <p>Control de stock</p>
+                                                    </li>
+                                                    <li>
+                                                        <span class="box-icon icon-check"></span>
+                                                        <p>Control de compras y ventas</p>
+                                                    </li>
+                                                    <li>
+                                                        <span class="box-icon icon-check"></span>
+                                                        <p>Informes personalizados</p>
+                                                    </li>
+                                                    <li>
+                                                        <span class="box-icon icon-check"></span>
+                                                        <p>Respaldos semanales</p>
+                                                    </li>
+                                                </ul>
+                                            </footer>
+                                        </article>
+                                    </div>
+                                    <div class="col-12 col-lg-4">
+                                        <article>
+                                            <header>
+                                                <h2>Plan Avanzado</h2>
+                                                <p>Para la empresa con múltiples locales.</p>
+                                            </header>
+                                            <div class="content-price">
+                                                <ul>
+                                                    <li>$59.990</li>
+                                                    <li>/mes</li>
+                                                </ul>
+                                                <p>Facturado mensualmente</p>
+                                                <a href="#" class="button-price">Comenzar gratis</a>
+                                            </div>
+                                            <footer>
+                                                <h3>Incluye lo del plan intermedio, mas:</h3>
+                                                <ul>
+                                                    <li>
+                                                        <span class="box-icon icon-check"></span>
+                                                        <p>Boleta electrónica SII ilimitada</p>
+                                                    </li>
+                                                    <li>
+                                                        <span class="box-icon icon-check"></span>
+                                                        <p>App móvil de venta</p>
+                                                    </li>
+                                                    <li>
+                                                        <span class="box-icon icon-check"></span>
+                                                        <p>Impresora portátil compatible</p>
+                                                    </li>
+                                                    <li>
+                                                        <span class="box-icon icon-check"></span>
+                                                        <p>Soporte remoto</p>
+                                                    </li>
+                                                </ul>
+                                            </footer>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="tab-two" role="tabpanel" aria-labelledby="tab-two-btn">
+                                <div class="row align-items-center row-prices">
+                                    <div class="col-12 col-lg-4">
+                                        <article>
+                                            <header>
+                                                <h2>Plan Básico</h2>
+                                                <p>Para el emprendedor que parte.</p>
+                                            </header>
+                                            <div class="content-price">
+                                                <ul>
+                                                    <li>$239.990</li>
+                                                    <li>/año</li>
+                                                </ul>
+                                                <p>Facturado anualmente</p>
+                                                <a href="#" class="button-price">Comenzar gratis</a>
+                                            </div>
+                                            <footer>
+                                                <h3>¿Qué incluye?</h3>
+                                                <ul>
+                                                    <li>
+                                                        <span class="box-icon icon-check"></span>
+                                                        <p>Boleta electrónica SII ilimitada</p>
+                                                    </li>
+                                                    <li>
+                                                        <span class="box-icon icon-check"></span>
+                                                        <p>App móvil de venta</p>
+                                                    </li>
+                                                    <li>
+                                                        <span class="box-icon icon-check"></span>
+                                                        <p>Impresora portátil compatible</p>
+                                                    </li>
+                                                    <li>
+                                                        <span class="box-icon icon-check"></span>
+                                                        <p>Soporte remoto</p>
+                                                    </li>
+                                                </ul>
+                                            </footer>
+                                        </article>
+                                    </div>
+                                    <div class="col-12 col-lg-4">
+                                        <article class="price-active">
+                                            <span class="price-active-globe">Más popular</span>
+                                            <header>
+                                                <h2>Plan Intermedio</h2>
+                                                <p>Para el negocio que quiere crecer.</p>
+                                            </header>
+                                            <div class="content-price">
+                                                <ul>
+                                                    <li>$491.880</li>
+                                                    <li>/año</li>
+                                                </ul>
+                                                <p>Facturado anualmente</p>
+                                                <a href="#" class="button-price">Comenzar gratis</a>
+                                            </div>
+                                            <footer>
+                                                <h3>Incluye lo del plan básico, más:</h3>
+                                                <ul>
+                                                    <li>
+                                                        <span class="box-icon icon-check"></span>
+                                                        <p>Facturación electrónica SII ilimitada</p>
+                                                    </li>
+                                                    <li>
+                                                        <span class="box-icon icon-check"></span>
+                                                        <p>Control de stock</p>
+                                                    </li>
+                                                    <li>
+                                                        <span class="box-icon icon-check"></span>
+                                                        <p>Control de compras y ventas</p>
+                                                    </li>
+                                                    <li>
+                                                        <span class="box-icon icon-check"></span>
+                                                        <p>Informes personalizados</p>
+                                                    </li>
+                                                    <li>
+                                                        <span class="box-icon icon-check"></span>
+                                                        <p>Respaldos semanales</p>
+                                                    </li>
+                                                </ul>
+                                            </footer>
+                                        </article>
+                                    </div>
+                                    <div class="col-12 col-lg-4">
+                                        <article>
+                                            <header>
+                                                <h2>Plan Avanzado</h2>
+                                                <p>Para la empresa con múltiples locales.</p>
+                                            </header>
+                                            <div class="content-price">
+                                                <ul>
+                                                    <li>$611.880</li>
+                                                    <li>/año</li>
+                                                </ul>
+                                                <p>Facturado anualmente</p>
+                                                <a href="#" class="button-price">Comenzar gratis</a>
+                                            </div>
+                                            <footer>
+                                                <h3>Incluye lo del plan intermedio, mas:</h3>
+                                                <ul>
+                                                    <li>
+                                                        <span class="box-icon icon-check"></span>
+                                                        <p>Boleta electrónica SII ilimitada</p>
+                                                    </li>
+                                                    <li>
+                                                        <span class="box-icon icon-check"></span>
+                                                        <p>App móvil de venta</p>
+                                                    </li>
+                                                    <li>
+                                                        <span class="box-icon icon-check"></span>
+                                                        <p>Impresora portátil compatible</p>
+                                                    </li>
+                                                    <li>
+                                                        <span class="box-icon icon-check"></span>
+                                                        <p>Soporte remoto</p>
+                                                    </li>
+                                                </ul>
+                                            </footer>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contacto" class="faq">
+                <div class="container">
+                    <header class="titles titles-center titles-dark"> 
+                        <div class="titles-txt">
+                            <h3><span>Preguntas frecuentes</span></h3>
+                            <p>Respondemos lo que más nos preguntan los nuevos clientes.</p>
+                        </div>
+                    </header>
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#item1">¿Necesito saber computación para usar Sofcar?</button>
+                            </h2>
+                            <div id="item1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>No. El sistema fue diseñado para que cualquier persona pueda usarlo desde el primer día. Si tienes dudas, te ayudamos.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#item2">¿Funciona con mi impresora actual?</button>
+                            </h2>
+                            <div id="item2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>Sofcar es compatible con las impresoras térmicas más comunes del mercado. Si no tienes, también te ofrecemos una.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#item3">¿Qué pasa si no tengo internet en mi local?</button>
+                            </h2>
+                            <div id="item3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>El plan Básico incluye una app móvil que permite emitir boletas offline. Se sincronizan automáticamente al volver a conectarse.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#item4">¿El SII va a aceptar mis boletas?</button>
+                            </h2>
+                            <div id="item4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>Sí. Sofcar es proveedor autorizado del SII. Todas las boletas y facturas que emitas son 100% válidas y aceptadas.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#item5">¿Puedo cambiar de plan después?</button>
+                            </h2>
+                            <div id="item5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>Por supuesto. Puedes subir o bajar de plan en cualquier momento desde tu cuenta, sin penalidades.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#item6">¿Cuánto tiempo tarda comenzar?</button>
+                            </h2>
+                            <div id="item6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>El proceso completo de registro y configuración toma menos de 24 horas. Nuestro equipo te acompaña en cada paso.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#item7">¿Tienen soporte en español y en Chile?</button>
+                            </h2>
+                            <div id="item7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>Sí. El soporte es 100% en español, por personas en Chile, por WhatsApp, teléfono y correo.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#item8">¿Puedo probar antes de pagar?</button>
+                            </h2>
+                            <div id="item8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>Sí. Todos los planes tienen 14 días de prueba gratuita, sin tarjeta de crédito ni compromiso.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="bottom-footer">
+                <span class="logo-float float4" data-parallax="0.4"></span>
+                <div class="container">
+                    <div class="row row-footer">
+                        <div class="col-12 col-lg-3 col-left">
+                            <a href="#top" class="logo">
+                                <span class="svg-logo"></span>
+                            </a>
+                            <p>Software de boleta electrónica SII y gestión integral para negocios chilenos.</p>
+                            <ul>
+                                <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                                <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                                <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+                                <li><a href="#"><i class="bi bi-whatsapp"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="col col-rigth">
+                            <nav class="nav-footer">
+                                <ul>
+                                    <li><h4>Producto</h4></li>
+                                    <li><a href="#servicios">Servicios</a></li>
+                                    <li><a href="#plataforma">La plataforma</a></li>
+                                </ul>
+                                <ul>
+                                    <li><h4>Empresa</h4></li>
+                                    <li><a href="#negocio">Para tu negocio</a></li>
+                                    <li><a href="#infraestructura">Infraestructura</a></li>
+                                    <li><a href="#planes">Precios</a></li>
+                                </ul>
+                                <ul>
+                                    <li><h4>Legal</h4></li>
+                                    <li><a href="#contacto">Preguntas frecuentes</a></li>
+                                    <li><a href="#contacto">Contacto</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div> 
+                </div>
+                <div class="footer-legal">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-lg-6">
+                                <p>© 2025 Sofcar SpA · Todos los derechos reservados</p>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <ul class="d-flex">
+                                    <li>Google Cloud</li>
+                                    <li>SII Certificado</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </main>
 
         <script type="module" src="/src/main.js"></script>
